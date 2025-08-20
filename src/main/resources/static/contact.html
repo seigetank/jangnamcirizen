@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>문의 · 장남 시민협회</title>
+  <meta name="description" content="장남 시민협회 공식 웹사이트">
+  <meta name="theme-color" content="#0ea5e9">
+  <link rel="icon" href="./img/favicon.svg">
+  <link rel="preload" as="style" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <script defer src="./js/main.js"></script>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@type": "Organization", "name": "장남 시민협회", "url": "https://example.org", "logo": "https://example.org/img/favicon.svg", "sameAs": []}
+  </script>
+</head>
+<body>
+
+    <header class="site-header" role="banner">
+      <div class="container">
+        <a class="brand" href="./index.html" aria-label="홈으로">
+          <svg class="brandmark" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" fill="currentColor" opacity=".1"></circle>
+            <path d="M7 12h10M12 7v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          </svg>
+          <span class="brandname">장남 시민협회</span>
+        </a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="메뉴 열기">☰</button>
+        <nav id="primary-nav" class="nav" role="navigation" aria-label="주요 메뉴">
+          <a class="nav-link " href="./index.html">홈</a>
+          <a class="nav-link " href="./about.html">협회 소개</a>
+          <a class="nav-link " href="./programs.html">사업 안내</a>
+          <a class="nav-link " href="./news.html">공지사항</a>
+          <a class="nav-link active" href="./contact.html">문의</a>
+        </nav>
+      </div>
+    </header>
+
+  <main id="content" class="site-main" tabindex="-1">
+<section class="page-header">
+  <div class="container">
+    <h1>문의</h1>
+    <p>프로그램, 회원가입, 후원 관련 문의를 남겨주세요.</p>
+  </div>
+</section>
+<section class="container grid-2">
+  <form class="card" aria-label="문의 폼">
+    <label>이름 <input type="text" name="name" required></label>
+    <label>이메일 <input type="email" name="email" required></label>
+    <label>문의 내용 <textarea name="message" rows="5" required></textarea></label>
+    <div class="btn-row">
+      <button class="btn btn-primary" type="submit">보내기</button>
+    </div>
+  </form>
+  <aside class="card prose">
+    <h3 id="join">회원가입</h3>
+    <p>협회 활동에 함께하실 분들을 기다립니다. 가입 문의는 폼으로 남겨주세요.</p>
+    <h3 id="donate">후원</h3>
+    <p>후원은 협회의 교육·복지·문화 사업에 소중히 사용됩니다.</p>
+    <h3>연락처</h3>
+    <p>이메일: info@example.org<br>주소: 장남시 시민로 123</p>
+  </aside>
+</section>
+</main>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2025 장남 시민협회 · 본 사이트 템플릿은 <a href="./LICENSE.txt">MIT 라이선스</a>로 제공됩니다.</p>
+      <nav class="footer-nav" aria-label="푸터">
+        <a href="./about.html">협회 소개</a>
+        <a href="./programs.html">사업 안내</a>
+        <a href="./news.html">공지사항</a>
+        <a href="./contact.html">문의</a>
+        <a href="./sitemap.xml">Sitemap</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
