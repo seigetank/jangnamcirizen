@@ -1,0 +1,24 @@
+image:
+  file: .gitpod.Dockerfile
+
+env:
+  JAVA_HOME: /usr/lib/jvm/java-17-openjdk-amd64
+  PATH: ${JAVA_HOME}/bin:${PATH}
+
+tasks:
+  - name: setup
+    init: |
+      sudo apt-get update -y
+      sudo apt-get install -y openjdk-17-jdk
+      sudo update-alternatives --set java  /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+      sudo update-alternatives --set javac /usr/lib/jvm/java-17-openjdk-amd64/bin/javac
+      ./gradlew --stop || true
+      rm -rf ~/.gradle/daemon || true
+      java -version
+      ./gradlew -version
+  - name: run
+    command: |
+      ./gradlew --no-daemon --console=plain bootRun \
+        --args="--spring.profiles.active=prod \
+                --logging.level.org.springframework.security=DEBUG \
+                --debug"
